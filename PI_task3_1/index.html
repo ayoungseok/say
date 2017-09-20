@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>coldplay</title>
+
+  <style>
+	h1 {color:rgb(249,249,91);}
+	h3 {color:rgb(249,249,91);}
+
+  body {background-color:white;}
+	ul {
+		width: 100%;
+		list-style-type: none;
+		padding: 10px;
+		overflow: hidden;
+		background-color: rgb(249,249,91);
+		clear: left;
+}
+
+li {display: inline;}
+
+li a {
+color: rgb(13,16,49);
+text-align: center;
+padding: 10px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color: rgb(13,16,49);
+}
+
+iframe{
+	float:left;
+}
+div{
+	float:left;
+}
+	</style>
+
+	<script type="text/javascript">
+		function clearLyrics() {
+			document.getElementById('lyrics').innerHTML = "";
+		}
+
+		function askyLyrics() {
+			document.getElementById('lyrics').innerHTML ="Cause youre a sky cause youre a sky full of stars<br>Im gonna give you my heart<br>Cause youre a sky cause youre a sky full of stars<br>Cause you light up the path<br>I do not care go on and tear me apart<br>I dont care if you do ooh<br>Cause in a sky cause in a sky full of stars<br>I think I saw you";
+		}
+
+		function fixyouLyrics() {
+			document.getElementById('lyrics').innerHTML ="When you try your best but you don&apos;t succeed<br>When you get what you want but not what you need<br>When you feel so tired but you can&apos;t sleep<br>Stuck in reverse<br>And the tears come streaming down your face<br>When you lose something you can&apos;t replace<br>When you love someone but it goes to waste<br>Could it be worse<br>Lights will guide you home<br>And ignite your bones<br>And I will try to fix you";
+		}
+
+		function everglowLyrics() {
+			document.getElementById('lyrics').innerHTML = "Oh they say people come<br>They say people go<br>This particular diamond was extra special<br>And though you might be gone<br>And the world may not know<br>Still I see you celestial";
+		}
+
+		function upupLyrics() {
+			document.getElementById('lyrics').innerHTML = "Fixing up a car to drive in it again<br>Searching for the water hoping for the rain<br>Up and up Up and up<br>down upon the canvas working meal to meal<br>waiting for a chance to pick your orange field<br>Up and up Up and up";
+		}
+	</script>
+</head>
+
+<body>
+<h1>COLDPLAY</h1>
+<h3>A HEAD FULL OF DREAMS in Korea</h3>
+
+<ul>
+	<li><a href="image.html" target="myframe" onclick="clearLyrics()">Coldplay</a></li>
+	<li><a href="https://www.youtube.com/embed/K7wkvqwCAks" target="myframe" onclick="askyLyrics()">A Sky Full of Stars</a></li>
+	<li><a href="https://www.youtube.com/embed/YEAgIj4fqUo" target="myframe" onclick="fixyouLyrics()">Fix You</a></li>
+	<li><a href="https://www.youtube.com/embed/jUsivJlXmg0" target="myframe" onclick="everglowLyrics">Everglow</a></li>
+	<li><a href="https://www.youtube.com/embed/oRm1tJYDr8A" target="myframe" onclick="upupLyrics">Up&amp;Up</a></li>
+</ul>
+
+<iframe height="500px" width="50%" name="myframe"
+style="border:none" src="image.html"></iframe>
+
+<div id="lyrics">
+
+</div>
+
+</body>
+</html>
